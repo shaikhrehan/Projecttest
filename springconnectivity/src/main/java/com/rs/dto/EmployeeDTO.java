@@ -7,7 +7,17 @@ public class EmployeeDTO implements Serializable
 	private int empno;
 	private String ename;
 	private String job;
-	private int salary;
+	private String salary;
+	
+	public EmployeeDTO() {}
+	
+	public EmployeeDTO(int empno, String ename, String job, String salary) {
+		super();
+		this.empno = empno;
+		this.ename = ename;
+		this.job = job;
+		this.salary = salary;
+	}
 	public int getEmpno()
 	{
 		return empno;
@@ -32,11 +42,11 @@ public class EmployeeDTO implements Serializable
 	{
 		this.job = job;
 	}
-	public int getSalary()
+	public String  getSalary()
 	{
 		return salary;
 	}
-	public void setSalary(int salary) 
+	public void setSalary(String salary) 
 	{
 		this.salary = salary;
 	}
