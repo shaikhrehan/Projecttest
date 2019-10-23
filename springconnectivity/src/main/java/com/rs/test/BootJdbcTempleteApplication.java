@@ -14,7 +14,7 @@ public class BootJdbcTempleteApplication
 {
 	public static void main(String[] args)
 	{
-		System.out.println("\n MAIN \n");
+		
 		ApplicationContext ctx=null;
 		EmpService service=null;
 		ctx=SpringApplication.run(BootJdbcTempleteApplication.class, args);

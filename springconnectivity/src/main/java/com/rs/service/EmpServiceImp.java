@@ -32,12 +32,13 @@ public class EmpServiceImp implements EmpService
 		List<EmployeeBO> listBO=null;
 		EmployeeDTO dto=null;
 		
+		
 		listBO=dao.getEmployeeDetailsByDesg(desg);
 		listDTO=new ArrayList();
 		for(EmployeeBO bo:listBO)
 		{
 			dto=new EmployeeDTO();
-			BeanUtils.copyProperties(bo, dto);
+			BeanUtils.copyProperties(bo,dto);
 			listDTO.add(dto);
 			
 		}
